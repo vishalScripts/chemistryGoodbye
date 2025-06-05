@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chemical Jar Explosion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Drag Chemicals into the Jar 🔥</h1>
+    <div class="chemicals">
+      <div class="chemical" data-name="H2">Hydrogen (H₂)</div>
+      <div class="chemical" data-name="O2">Oxygen (O₂)</div>
+      <div class="chemical" data-name="Na">Sodium (Na)</div>
+      <div class="chemical" data-name="Cl2">Chlorine (Cl₂)</div>
+      <div class="chemical" data-name="Explodium">Explodium</div>
+    </div>
+    <div id="jar" class="jar">🧪 Drop Here</div>
+    <p id="equation-display">Equation: --</p>
+    <div id="reaction-result" class="hidden flscreen">
+      <img src="./teacher.jpeg" alt="Teacher" class="teacher-img">
+    </div>
+    <audio id="bd-sound" src="./bd.mp3" preload="auto"></audio>
+    <audio id="explosion-sound" src="./explosion.mp3" preload="auto"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

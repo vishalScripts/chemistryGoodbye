@@ -1,0 +1,80 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: #fff8e1;
+  text-align: center;
+  padding: 50px;
+  transition: background 0.5s ease;
+}
+body.explode {
+  background: #ff5252;
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px); }
+  25% { transform: translate(-1px, -2px); }
+  50% { transform: translate(-3px, 1px); }
+  75% { transform: translate(2px, 3px); }
+  100% { transform: translate(1px, -1px); }
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+.chemicals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.chemical {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #e1f5fe;
+  border: 2px solid #0288d1;
+  border-radius: 8px;
+  cursor: grab;
+}
+.jar {
+  margin: 30px auto;
+  padding: 40px;
+  width: 200px;
+  border: 3px dashed #4caf50;
+  border-radius: 12px;
+  background-color: #f1f8e9;
+  font-size: 20px;
+}
+.jar-hover {
+  background-color: #c8e6c9;
+}
+.teacher-img {
+  height  : 100%;
+  margin: auto ;
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.goodbye-text {
+  color: red;
+  font-size: 28px;
+}
+.graffiti {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: #444;
+}
+#equation-display {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #444;
+}
+
+.flscreen{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
